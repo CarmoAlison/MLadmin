@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Produtos</title>
+    <link rel="stylesheet" href="admin.css  ">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <header>
+        <h1>Gerenciamento de Produtos</h1>
+    </header>
+
+    <main>
+        <!-- Formulário para Adicionar Produto -->
+        <section id="add-product">
+            <h2>Adicionar Produto</h2>
+            <form id="product-form">
+                <input type="text" id="product-name" placeholder="Nome do Produto" required>
+                <input type="text" id="product-description" placeholder="Descrição" required>
+                <input type="number" id="product-price" placeholder="Preço" step="0.01" required>
+                <input type="text" id="product-type" placeholder="Tipo" required>
+                <input type="number" id="product-stock" placeholder="Estoque" required>
+                <input type="file" id="product-image" accept="image/*" required>
+                <button type="submit">Adicionar Produto</button>
+            </form>
+        </section>
+
+        <!-- Lista de Produtos -->
+        <section id="product-list">
+            <h2 id="listaNome">Lista de Produtos</h2>
+            <div id="products-barra">
+                Pesquisar
+                <input type="text" id="search-bar" placeholder="Buscar produtos...">
+            </div>
+            <div class="product-list"></div>
+        </section>
+    </main>
+
+    <script src="admin.js"></script>
+</body>
+</html>
